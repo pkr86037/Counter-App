@@ -7,9 +7,9 @@ const classby = document.querySelector('.classby');
 
 minusBtn.addEventListener('click', () => {
     const countValue = parseInt(count.innerText)
-
+    const classbyValue = parseInt(classby.value)
    if (countValue > 0) {
-     count.innerText = countValue - 1
+     count.innerText = countValue - classbyValue
      
    } else {
     minusBtn.disabled = true
@@ -20,8 +20,9 @@ minusBtn.addEventListener('click', () => {
 
 plusBtn.addEventListener('click', () => {
     const countValue = parseInt(count.innerText);
+    const classbyValue = parseInt(classby.value)
     if(countValue >= 0) minusBtn.disabled = false
-    count.innerText = countValue + 1
+    count.innerText = countValue + classbyValue
 
 
 });
